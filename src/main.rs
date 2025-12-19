@@ -30,7 +30,7 @@ fn main() {
                 } else if let Some(path) = find_in_path(arg) {
                     println!("{} is {}", arg, path);
                 } else {
-                    println!("{} not found", arg);
+                    println!("{}: not found", arg);
                 }
             }
             _ => println!("{}: command not found", command),
